@@ -15,6 +15,6 @@ while i != x-1:
    if x % i == 0:
        print(f"{x} can divided by {i}, so it is not a prime number")
 
-   elif i == x and x % (x-1) != 0 :
+   elif i == x-1 and x % (x-1) != 0 :
        print(f"{x} can divided by only 1 and itself, so it is a prime number")
     
