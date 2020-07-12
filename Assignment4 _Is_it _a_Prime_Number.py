@@ -9,15 +9,16 @@ Created on Sat Jul 11 14:17:49 2020
 x = int(input("enter an integer:"))
 
 i = 1
-
-while i != x-1:
+cont = 0
+while i != x:
    i += 1 
-   if x % i == 0:
+   if x-1 % i == 0:
        print(f"{x} can divided by {i}, so it is not a prime number")
-
-   elif x ==1:
+       cont += 1 
+   elif x == 1:
         print(f"{x} can divided by only itself, so it is a prime number")
         break
-   elif i == x-1 and x % (x-1) != 0 :
-       print(f"{x} can divided by only 1 and itself, so it is a prime number")
+   else :
+       if i == x-1 and cont == 0:
+           print(f"{x} can divided by only 1 and itself, so it is a prime number")
     
