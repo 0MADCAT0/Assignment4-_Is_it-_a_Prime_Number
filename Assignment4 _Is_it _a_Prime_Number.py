@@ -16,12 +16,15 @@ while True:
                 print(f"{x} can divided by {i}, so it is not a prime number")
                 cont = False 
             elif x == 1:
-                print(f"{x} can divided by only itself, so it is a prime number")
+                print(f"{x} can divided by only itself, so it is not a prime number")
                 break
             else :
                 if i == x-1 and cont:
                     print(f"{x} can divided by only 1 and itself,\
 so it is a prime number")
+        if x == 2 :        
+            print(f"{x} can divided by only 1 and itself, so it is a prime number")  # only for num = 2
+        
     except ValueError:
         print("güle güle")
         break
